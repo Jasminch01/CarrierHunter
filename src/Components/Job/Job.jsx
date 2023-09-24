@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Job = ({job}) => {
-    const {logo, job_title, company_name, remote_or_onsite, location, salary, job_type } = job;
+    const {id, logo, job_title, company_name, remote_or_onsite, location, salary, job_type } = job;
     return (
         <div className="w-full p-5 rounded-sm border border-slate-300">
             <div className="space-y-3 ">
@@ -14,7 +15,8 @@ const Job = ({job}) => {
                 </div>
                 <p>{location}</p>
                 <p> Salary : {salary} $</p>
-                <button className="p-3 bg-indigo-400 rounded text-white">Show Details</button>
+                
+                <Link to={`/jobs-details/${id}`}> <button className="p-3 bg-indigo-400 rounded text-white mt-5">Show Details</button> </Link>
             </div>
         </div>
     );

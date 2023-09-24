@@ -10,3 +10,8 @@ body {
 .active {
    color: violet;
 }
+#job-details-bg{
+    background-image: url('/public/images/bg1.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
