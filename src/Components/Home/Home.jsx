@@ -1,7 +1,10 @@
+import JobCategories from "../JobCategories/JobCategories";
+
 const Home = () => {
   return (
-    <div className="bg-indigo-50">
-      <div className="lg:flex justify-between gap-10 items-center w-[80%] mx-auto">
+    <div className="">
+      <div className="bg-indigo-50">
+      <div className="lg:flex justify-between gap-10 items-center w-[80%] mx-auto bg-indigo-50">
         <div className="flex-grow-1 md:w-[570px] space-y-3">
           <h1 className="text-6xl font-extrabold">
             One Step <br /> Closer To Your <br />
@@ -18,6 +21,8 @@ const Home = () => {
           <img src="../../../public/images/user.png" alt="" className="" />
         </div>
       </div>
+      </div>
+      <JobCategories></JobCategories>
     </div>
   );
 };
