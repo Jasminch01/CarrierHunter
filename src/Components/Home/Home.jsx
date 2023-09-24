@@ -1,6 +1,9 @@
+import { useLoaderData } from "react-router-dom";
+import FeaturedJobes from "../FeaturedJobs/FeaturedJobes";
 import JobCategories from "../JobCategories/JobCategories";
 
 const Home = () => {
+  const jobsData = useLoaderData()
   return (
     <div className="">
       <div className="bg-indigo-50">
@@ -22,7 +25,13 @@ const Home = () => {
         </div>
       </div>
       </div>
+      <div>
+
       <JobCategories></JobCategories>
+      </div>
+      <div>
+        <FeaturedJobes jobsData = {jobsData}></FeaturedJobes>
+      </div>
     </div>
   );
 };

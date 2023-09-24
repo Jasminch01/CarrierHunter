@@ -10,11 +10,8 @@ const router = createBrowserRouter([
     children : [
         {
             path : '/',
-            element : <Home></Home>
-        },
-        {
-            path : '/Statistics',
-            element : <div>Statistics</div>
+            element : <Home></Home>,
+            loader : ()=> fetch('/jobs.json')
         },
         {
             path : '/jobs',

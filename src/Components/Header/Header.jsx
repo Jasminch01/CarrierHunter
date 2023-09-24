@@ -4,7 +4,7 @@ import {  Link, NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <NavLink to= '/statistics' className={({ isActive, isPending }) =>
+      <NavLink to= '/' className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "active mr-3 text-base" : " mr-3 text-base"
   } >
         <button className="">Statisticks</button>
