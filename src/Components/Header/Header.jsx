@@ -50,7 +50,7 @@ const Header = () => {
               {links}
             </ul>
           </div>
-          <Link to= '/home' className="uppercase text-xl">Carrier Hub</Link>
+          <Link to= '/' className="uppercase text-xl">Carrier Hub</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
