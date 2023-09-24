@@ -13,7 +13,8 @@ const Job = ({job}) => {
                     <button className="p-2 border border-violet-300">{job_type}</button>
                 </div>
                 <p>{location}</p>
-                <p>{salary}</p>
+                <p> Salary : {salary} $</p>
+                <button className="p-3 bg-indigo-400 rounded text-white">Show Details</button>
             </div>
         </div>
     );

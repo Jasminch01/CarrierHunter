@@ -7,7 +7,7 @@ const FeaturedJobes = ({ jobsData }) => {
   return (
     <div className="my-5">
       <div>
-        <p className="text-3xl font-bold  text-center">Fetured Jobs</p>
+        <p className="text-3xl font-bold  text-center">Featured Jobs</p>
         <p className="text-base text-center">
           Explore thousands of job opportunities with all the information you
           need. Its your future
